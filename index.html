@@ -170,7 +170,7 @@ p.ex1 {
                 const lastCommitDate = new Date(commits[0].commit.committer.date);
 
                 //Displaying the time on load
-                document.getElementById('last-updated').innerText = 'Last Modified Time: $(lastCommitDate.toLocaleString()}';
+                document.getElementById('last-updated').innerText = `Last Modified Time: $(lastCommitDate.toLocaleString()}`;
             } else {
                 document.getElementById('last-updated').innerText = 'No commits found in the repository.';
             }
