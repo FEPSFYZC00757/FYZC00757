@@ -63,9 +63,6 @@ p.ex1 {
 
      
 <h2 id="Main Article", style="font-family:calibri;">Main Article</h2>
-<p id='MainArticle_InText'>
-
-
 
 
 <h3 id="What is Personal Data?", style="font-family:calibri;">What is Personal Data?</h3>
@@ -215,13 +212,12 @@ p.ex1 {
     }
 
     function displayTotalWordCount() {
-        const MainArticleCount = displayWordCount("MainArticle_InText");
         const DataCount = displayWordCount("Data_InText");
         const ValueCount = displayWordCount("Value_Intext");
         const RisksCount = displayWordCount("Risks_InText");
         const FutureCount = displayWordCount("Future_InText");
         const ConclusionCount = displayWordCount("Conclusion_InText");
-        const totalWordCount = MainArticleCount + DataCount + ValueCount + RisksCount + FutureCount + ConclusionCount;
+        const totalWordCount = DataCount + ValueCount + RisksCount + FutureCount + ConclusionCount;
     document.getElementById("totalWordCount").innerText = `Total Word Count: ${totalWordCount}`;
     }
 
