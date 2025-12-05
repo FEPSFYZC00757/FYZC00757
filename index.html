@@ -69,24 +69,29 @@ p.ex1 {
 
 
 <h3 id="What is Personal Data?", style="font-family:calibri;">What is Personal Data?</h3>
+<p id='Data_InText'>
     Personal Data is like money in a way that it is exchanged, sold, and purchased on digital markets. We don’t notice it, but everything we do online generates data. However, the difference between personal data and money is that data doesn’t have an inherent worth, its value is determined in its ability to be turned into knowledge and information.1 Consumers generate 2.5 quintillion bytes of data every day.2 This includes information about what people buy, who they talk to, etc. Data mining can use machine learning to predict patterns in decision-making.3 Therefore, companies can use data mining to predict a wide array of things such as weather patterns. Through data mining, personal data can create economic value for tech companies and advertisers by turning raw user information into actionable insights that can be sold, used for marketing, or used to improve products.
 
 
 <h3 id="How does Personal Data create economic value?", style="font-family:calibri;">How does Personal Data create economic value?</h3>
+<p id='Value_InText'>
     One of the biggest uses of personal data is demonstrated by Google, who collect search histories, location data, YouTube viewing behaviour, emails, and app usage to build detailed user profiles. This allows Google to sell highly targeted Ads through either Google ads or YouTube Ads.4 
     A more unique use of personal data comes from Apple, collecting relatively little personal data and using it strategically to strengthen their ecosystem. More importantly, they use privacy as a selling point, giving their company a differentiation advantage. For example, in its “Personal Data Use for Personalised User Experiences” policy, Apple claims that they use limited personal data. Users can agree to receive marketing communications and when agreed upon they receive different types of marketing emails based on limited personal data that the user provides directly to Apple from their use of the App Store and their Apple Account. Moreover, majority of their data goes towards personalisation in the App Store, helping users find and discover content that is most relevant to them. This is demonstrated in the App Store’s ‘Today’ Tab, Search, and in the ‘More Games You Might Like’ section.5  So how does this generate economic value? Apple’s model differs from other companies whilst still using personal data to convert economic value by informing a better product/service design, enabling targeted services and ads, strengthening user lock-in (meaning that the lifetime value of each customer is increased), and creating a value proposition that supports their premium pricing and brand differentiation.
 
 
 <h3 id="The Risks", style="font-family:calibri;">The Risks</h3>
+<p id='Risks_InText'>
     When personal data is used for economic value, many risks emerge. One key risk is the erosion of privacy. Surveillance capitalism, a concept introduced by Shoshana Zuboff, describes how human experience is claimed as ‘free raw material’ for commercial practices of extraction and prediction.6 This means that users are no longer just consumers, instead they become the ‘objects from which raw materials are extracted,’ while the actual customers are advertisers and other third parties.7 Therefore, companies may steer behaviour and shape choices without transparent consent or accountability. 
     Another critical risk lies in economic exploitation and market power. Firms that collect a vast amount of behavioural data often gain an advantage over competitors, allowing them to dominate markets and manipulate innovation. A recent study published by Springer found that when companies have unequal access to data, market can quickly become domination by one or two firms, constraining competition and innovation.8 These data monopolies not only distort market fairness but it also gives corporations power over consumers and smaller businesses.
 
 
 <h3 id="The Future of Personal Data", style="font-family:calibri;">The Future of Personal Data</h3>
+<p id='Future_InText'>
     The book The Morality of Law tells a story about a young ruler who undertakes to reform the law of the land. He makes a few attempts at it and all are met with public discontent. Citizens threatened to disregard the new law as they believed, ‘to command what cannot be done is not to make law; it is to unmake law, for a command that cannot be obeyed serves no end but confusion, fear and chaos’.9 In The law of everything by Nadezha Purtova he uses the same narrative to describe the situation of the future of European data protection. He argues our daily existence is mediated by information technology, where everything is being ‘datified’, and any data can be seen as personal. As a consequence, European data protection law is facing a risk of becoming ‘the law of everything’, meant to be the highest level of legal protection, but is instead a practice that’s near impossible to comply with and is therefore discredited as conducive to abuse of rights.10 In terms of the future of personal data, authors like Schwartz and Solove11 suggest that, given the progress of data processing technologies and the amount of data available for analysis, absolute and irreversible anonymity is no longer possible. In short, this means that even if data is anonymised today, future technologies can often work out who it belongs to. So perfect anonymity no longer exists in the digital age.
 
 
 <h3 id="Conclusion", styles="font-family:calibri;">Conclusion</h3>
+<p id='Conclusion_InText'>
     Overall, personal data has become one of the most valuable resources of the digital age, powering major economic systems and shaping how modern technology functions. As companies increasingly rely on personal data to personalise the users experience, innovate, and generate income, the line between consumer and commodity continues to blur. Advances in data processing and the growing impossibility of anonymity raises questions about the future of regulation and individual autonomy. Moving forward into the future of personal data, the primary challenge is finding a fair balance between technological innovation and protection of our personal freedoms, so that both people and companies benefit from a data-driven world.
 
 
@@ -214,7 +219,12 @@ p.ex1 {
 
     function displayTotalWordCount() {
         const MainArticleCount = displayWordCount("MainArticle_InText");
-        const totalWordCount = MainArticleCount;
+        const DataCount = displayWordCount("Data_InText");
+        const ValueCount = displayWordCount("Value_Intext");
+        const RisksCount = displayWordCount("Risks_InText");
+        const FutureCount = displayWordCount("Future_InText");
+        const ConclusionCount = displayWordCount("Conclusion_InText");
+        const totalWordCount = MainArticleCount + DataCount + ValueCount + RisksCount + FutureCount + ConclusionCount;
     document.getElementById("totalWordCount").innerText = `Total Word Count: ${totalWordCount}`;
     }
 
