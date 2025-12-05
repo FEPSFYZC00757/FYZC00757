@@ -147,7 +147,7 @@ p.ex1 {
     Verify Last Modified Time
 </button>
 
-
+<script type="text/javascript">
 <script>
     async function getLastUpdatedTime() {
         const username = 'FEPSFYZC00757';
@@ -175,7 +175,7 @@ p.ex1 {
                 document.getElementById('last-updated').innerText = 'No commits found in the repository.';
             }
         } catch (error) {
-            console.error('Error fetching  the last updated time:', error);
+            console.error('Error fetching the last updated time:', error);
             document.getElementById('last-updated').innerText = 'Error fetching update time. Please check the repository details.';
         }
     }
