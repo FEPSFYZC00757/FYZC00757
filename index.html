@@ -63,6 +63,7 @@ p.ex1 {
 
      
 <h2 id="Main Article", style="font-family:calibri;">Main Article</h2>
+     <p id='MainArticle_InText'>
 <p class="ex1">
 
 <div id="main-article">
@@ -195,18 +196,28 @@ p.ex1 {
 
 
 </script>
+<p id="totalWordCount"></p>
+
+<hr>
 
 <script>
-    function countWords(text) {
-        text = text.trim();
-        if (!text) return 0;
-        return text.split(/\s+/).length;
+    function displayWordCount(sectionId, outputId) {
+        const text = document.getElementById(sectionId).textContent;
+
+        const wordArray = text.trim().split(/\s+/);
+
+        const wordCount = wordArray.length;
+
+        return wordCount;
     }
 
-    const articleText = document.getElementById("main-article").innerText;
-    const wordCount = countWords(articleText);
+    function displayTotalWordCount() {
+        const MainArticleCount = displayWordCount("MainArticle_InText");
+    document.getElementById("totalWordCount").innerText = `Total Word Count: ${totalWordCount}`;
+    }
 
-    document.getElementById("word-count").innerText = "Word Count: " + wordCount;
+    window.onload = displayTotalWordCount;
+
 </script>
     
 </body>
